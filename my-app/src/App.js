@@ -1,27 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import VillaLobosPage from './pages/VillaLobosPage'; // Updated path
+import ChorosPage from './pages/ChorosPage'; // Updated path
+import Navbar from './components/navbar';
+import MainCarousel from './components/carousel';
+import Marketing from './components/marketing';
+import Featurette from './components/featurette';
+import Footer from './components/footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <MainCarousel />
+      <Marketing />
+      <Featurette />
+      <Footer />
+    </>
   );
 }
+
 
 export default App;
