@@ -5,7 +5,7 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #878289; /* Medium Grey for general text */
+  color: #B2BEB5; /* Medium Grey for general text */
 }
 
 
@@ -15,7 +15,18 @@ body {
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
-  background-color: #808080; /* Soft blue-grey for carousel background */
+  background: linear-gradient(75deg, #36454F, #A9A9A9, #36454F, #A9A9A9);
+  background-size: 300% 300%;
+  animation: gradientShift 12s linear infinite;
+}
+
+@keyframes gradientShift {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -86,6 +97,8 @@ body {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
 }
 
+/* Button for Fun Fact */
+
 
 
 /* Featurettes
@@ -136,3 +149,6 @@ body {
 /* NAVBAR CSS
 -------------------------------------------------- */
 
+.navbar {
+  background: #36454F;
+}

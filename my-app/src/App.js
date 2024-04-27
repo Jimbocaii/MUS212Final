@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import './bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import VillaLobosPage from './pages/VillaLobosPage'; // Updated path
 import ChorosPage from './pages/ChorosPage'; // Updated path
 import Navbar from './components/navbar';
