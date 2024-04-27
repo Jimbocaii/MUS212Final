@@ -67,17 +67,18 @@ body {
 
 .rounded-circle {
   background-color: #bbccde; /* Light blue for decorative circles */
-  width: 140px;
-  height: 140px;
+  width: 186px;
+  height: 186px;
   background-color: #777;
   margin-bottom: 15px; /* or any space you want between the circle and the text */
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2); /* Outer shadow */
-  border: 2px solid #555; /* Optional: border to enhance the 3D effect */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.2); /* Outer shadow */
   background-image: linear-gradient(to top left, #999, #555); /* Gradient for a 3D look */
   transition: transform 0.1s, box-shadow 0.2s; /* Smooth transition for click effect */
+  background-position: center; /* Center the background image */
+  object-fit: contain;
 }
 
 .rounded-circle:hover {

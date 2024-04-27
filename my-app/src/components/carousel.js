@@ -3,7 +3,6 @@ import React from 'react';
 import choro1 from '../assets/images/choro1.jpg';
 import villalobos1 from '../assets/images/villalobos1.jpg';
 import villalobos2 from '../assets/images/villalobos2.jpg';
-import guitar from '../assets/images/guitar.jpg';
 
 const carousel = () => {
   return (
@@ -17,22 +16,22 @@ const carousel = () => {
         <div className="carousel-item active">
           <img src={choro1} className="d-block w-100 carousel-image" alt="First slide"/>
           <div className="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5>Slide 1</h5>
+            <p>!</p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={villalobos1} className="d-block w-100 carousel-image" alt="Second slide"/>
           <div className="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5>Slide 2</h5>
+            <p>!</p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={villalobos2} className="d-block w-100 carousel-image" alt="Third slide"/>
           <div className="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>Slide 3</h5>
+            <p>!</p>
           </div>
         </div>
       </div>

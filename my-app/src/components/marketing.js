@@ -1,27 +1,32 @@
 // src/components/marketing.js
 import React from 'react';
-
+import funfact1 from '../assets/images/funfact1.jpg';
+import funfact2 from '../assets/images/funfact2.png';
+import funfact3 from '../assets/images/funfact3.png';
 const marketing = () => {
   return (
     <div className="container marketing">
       <div className="row">
         <div className="col-lg-4">
-          <div className="rounded-circle" style={{ width: '140px', height: '140px', backgroundColor: '#777' }}></div>
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <div className="rounded-circle" style={{ backgroundImage: `url(${funfact1})` }}></div>
+          <div className="rounded-text">
+            <h2>Fun Fact</h2>
+            <p><a className="btn btn-secondary" href="#" role="button">Click here &raquo;</a></p>
+          </div>
         </div>
         <div className="col-lg-4">
-          <div className="rounded-circle" style={{ width: '140px', height: '140px', backgroundColor: '#777' }}></div>
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <div className="rounded-circle" style={{ backgroundImage: `url(${funfact2})` }}></div>
+          <div className="rounded-text">
+            <h2>Another One</h2>
+            <p><a className="btn btn-secondary" href="#" role="button">Click again &raquo;</a></p>
+          </div>
         </div>
         <div className="col-lg-4">
-          <div className="rounded-circle" style={{ width: '140px', height: '140px', backgroundColor: '#777' }}></div>
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <div className="rounded-circle" style={{ backgroundImage: `url(${funfact3})` }}></div>
+          <div className="rounded-text">
+            <h2>ANOTHER ONE</h2>
+            <p><a className="btn btn-secondary" href="#" role="button">CLICK AGAIN &raquo;</a></p>
+          </div>
         </div>
       </div>
     </div>
