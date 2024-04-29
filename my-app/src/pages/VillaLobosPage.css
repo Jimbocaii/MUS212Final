@@ -1,0 +1,180 @@
+/* General Styles */
+.lobos-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.lobos-section-container {
+    margin-bottom: 40px; /* Increased bottom margin for better separation */
+    padding: 20px;
+    background-color: #f5f5f5; /* Light background for each section */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.lobos-keyword-section {
+    margin-bottom: 40px;
+}
+
+/* Navigation Buttons */
+.lobos-navigation button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #4a6977;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.lobos-navigation button:hover, .lobos-navigation button:focus {
+    background-color: #36454F;
+    transform: scale(1.15); /* Slightly enlarge button on hover */
+}
+
+.lobos-navigation button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Progress Bar */
+.lobos-progress-container {
+    position: relative; /* Set position relative for positioning label absolutely within this container */
+    width: 100%;
+    height: 25px; /* Increased height for better visibility */
+    background-color: #ddd;
+    margin: 20px 0;
+    border-radius: 5px; /* Add border radius for a smoother look */
+    overflow: hidden;
+}
+
+.lobos-progress-bar {
+    height: 100%;
+    background: linear-gradient(to right, #2b4864, #3f6a8b, #4a829f, #5890b5, #76a7ca); /* Radial gradient with multiple colors */
+    transition: width 0.6s ease;
+    border-radius: 5px;
+}
+
+.progress-label {
+    position: absolute;
+    top: 50%; /* Center vertically in the progress bar */
+    left: 50%; /* Start at the center of the bar */
+    transform: translate(-50%, -50%); /* Adjust to center the label exactly */
+    font-size: 12px;
+    color: white; /* Make text color white for better visibility on darker backgrounds */
+    z-index: 10;
+}
+
+.lobos-section-container .lobos-submit-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #f37928; /* Bright blue to stand out */
+    color: white;
+    font-size: 18px; /* Larger font size for better visibility */
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.lobos-section-container .lobos-submit-button:hover {
+    background-color: #bb3200;
+    transform: scale(1.1);
+}
+/* Custom Alert Modal */
+.lobos-alert-modal {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lobos-alert-box {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.lobos-alert-box button {
+    padding: 10px 20px;
+    background-color: #4a6977;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.lobos-alert-box button:hover {
+    background-color: #36454F;
+    transform: scale(1.05);
+}
+
+/* Title enhancements */
+.lobos-section-container h1 {
+    color: #333; /* Darker color for better visibility */
+    margin-bottom: 10px; /* Less space below heading */
+}
+
+/* Content style enhancements */
+.lobos-section-container p {
+    color: #666; /* Darker text color for better readability */
+    font-size: 16px; /* Slightly larger font size */
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+/* Quiz Answer Buttons */
+.lobos-section-container button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.lobos-section-container button:hover {
+    background-color: #4a6977;
+    color: white;
+}
+
+/* Keyword Boxes */
+.lobos-keyword-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lobos-keyword-box {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lobos-keyword-box:hover {
+    transform: translateY(-5px); /* Lift the box slightly on hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Enhanced shadow effect for depth */
+}
+
+
+@media (max-width: 768px) {
+    .lobos-keyword-box {
+        width: 100%;
+    }
+}

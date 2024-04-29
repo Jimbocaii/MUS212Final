@@ -123,6 +123,19 @@ body {
   color: #878289; /* Use the medium grey here too for consistency */
 }
 
+.featurette-image {
+  max-width: 100%; /* Ensures the image is never wider than its container */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .featurette-image {
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Adjust height automatically */
+  }
+}
+
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -151,4 +164,39 @@ body {
 
 .navbar {
   background: #36454F;
+}
+
+.nav-link.active {
+  color: #fff; 
+  background-color: #4a6977; 
+  border: none;
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  box-shadow: 0 4px #2c3e50; 
+  transform: translateY(-2px); 
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.nav-link.active:hover {
+  transform: translateY(-1px); 
+  box-shadow: 0 6px #2c3e50; 
+}
+
+
+/* Button change overall */
+
+.btn-primary {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
