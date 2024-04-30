@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Jimbocaii/MUS212Final/static/css/main.8904b9b9.css",
-    "main.js": "/Jimbocaii/MUS212Final/static/js/main.fc92ed34.js",
-    "static/js/453.ed3810f9.chunk.js": "/Jimbocaii/MUS212Final/static/js/453.ed3810f9.chunk.js",
-    "static/media/me.JPEG": "/Jimbocaii/MUS212Final/static/media/me.225513b3bc3a03c2b9ca.JPEG",
-    "static/media/cuban1.jpg": "/Jimbocaii/MUS212Final/static/media/cuban1.28d90323d9fdaad71fa7.jpg",
-    "static/media/choro1.jpg": "/Jimbocaii/MUS212Final/static/media/choro1.fcf0fa060c0787c2b23e.jpg",
-    "static/media/villalobos1.jpg": "/Jimbocaii/MUS212Final/static/media/villalobos1.241ba4a019760aeb9875.jpg",
-    "static/media/villalobos2.jpg": "/Jimbocaii/MUS212Final/static/media/villalobos2.59fa9c2fe0a675cc8ac2.jpg",
-    "index.html": "/Jimbocaii/MUS212Final/index.html",
-    "main.8904b9b9.css.map": "/Jimbocaii/MUS212Final/static/css/main.8904b9b9.css.map",
-    "main.fc92ed34.js.map": "/Jimbocaii/MUS212Final/static/js/main.fc92ed34.js.map",
-    "453.ed3810f9.chunk.js.map": "/Jimbocaii/MUS212Final/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/MUS212Final/static/css/main.8904b9b9.css",
+    "main.js": "/MUS212Final/static/js/main.7b805981.js",
+    "static/js/453.ed3810f9.chunk.js": "/MUS212Final/static/js/453.ed3810f9.chunk.js",
+    "static/media/me.JPEG": "/MUS212Final/static/media/me.225513b3bc3a03c2b9ca.JPEG",
+    "static/media/cuban1.jpg": "/MUS212Final/static/media/cuban1.28d90323d9fdaad71fa7.jpg",
+    "static/media/choro1.jpg": "/MUS212Final/static/media/choro1.fcf0fa060c0787c2b23e.jpg",
+    "static/media/villalobos1.jpg": "/MUS212Final/static/media/villalobos1.241ba4a019760aeb9875.jpg",
+    "static/media/villalobos2.jpg": "/MUS212Final/static/media/villalobos2.59fa9c2fe0a675cc8ac2.jpg",
+    "index.html": "/MUS212Final/index.html",
+    "main.8904b9b9.css.map": "/MUS212Final/static/css/main.8904b9b9.css.map",
+    "main.7b805981.js.map": "/MUS212Final/static/js/main.7b805981.js.map",
+    "453.ed3810f9.chunk.js.map": "/MUS212Final/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8904b9b9.css",
-    "static/js/main.fc92ed34.js"
+    "static/js/main.7b805981.js"
   ]
 }
