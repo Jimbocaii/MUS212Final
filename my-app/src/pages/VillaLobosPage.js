@@ -1,25 +1,32 @@
 import React, { useState } from 'react';
 import './VillaLobosPage.css';
+import villalobos1 from '../assets/images/villalobos1.jpg';
 
 const sections = [
-  { title: "Who is Villa-Lobos?", content: "Heitor Villa-Lobos was a Brazilian composer, conductor, cellist, and guitarist known for his creative compositions that blend Western classical music with Brazilian folk music.", details: ["Influential in the development of Brazilian art music.", "Used elements from both Brazilian folk music and European classical music.", "His compositions include symphonies, operas, and chamber music.", "Promoted Brazilian music globally.", "His style is characterized by originality and innovation."], imageUrl: "./assets/images/villalobos1.jpg",
+  { title: "Who is Villa-Lobos?", content: "Heitor Villa-Lobos was a Brazilian composer, conductor, cellist, and guitarist known for his creative compositions that blend Western classical music with Brazilian folk music.", details: ["Influential in the development of Brazilian art music.", "Used elements from both Brazilian folk music and European classical music.", "His compositions include symphonies, operas, and chamber music.", "Promoted Brazilian music globally.", "His style is characterized by originality and innovation."], imageUrl: villalobos1,
   layout: Math.random() < 0.5 ? 'right' : 'left' },
-  { title: "His Famous Works", content: "Villa-Lobos is best known for his Bachianas Brasileiras series, Chôros, and his operas which incorporate a variety of Brazilian music styles and instruments.", details: ["Bachianas Brasileiras are a fusion of Brazilian folk music and the style of Johann Sebastian Bach.", "Chôros introduces a new style inspired by street music of Rio de Janeiro.", "His operas often feature themes of Brazilian nationalism and folklore.", "His works have been performed internationally.", "Villa-Lobos was a pioneer in using Brazilian indigenous music and rhythms in orchestral compositions."] },
-  { title: "Music and Brazil's Political Connection", content: "His works were influenced by and also influenced the Brazilian government and its policies, promoting a sense of national identity through music.", details: ["His music served as a cultural symbol during the era of Getúlio Vargas.", "Villa-Lobos worked as a music educator and created orchestras during the Estado Novo.", "His compositions are seen as expressions of Brazilian nationalism.", "He used his music to foster a sense of Brazilian unity and pride.", "Villa-Lobos's music reflects the political and social ethos of his times."] },
+  { title: "His Famous Works", content: "Villa-Lobos is best known for his Bachianas Brasileiras series, Chôros, and his operas which incorporate a variety of Brazilian music styles and instruments.", details: ["Bachianas Brasileiras are a fusion of Brazilian folk music and the style of Johann Sebastian Bach.", "Chôros introduces a new style inspired by street music of Rio de Janeiro.", "His operas often feature themes of Brazilian nationalism and folklore.", "His works have been performed internationally.", "Villa-Lobos was a pioneer in using Brazilian indigenous music and rhythms in orchestral compositions."], imageUrl: villalobos1,
+  layout: Math.random() < 0.5 ? 'right' : 'left' },
+  { title: "Music and Brazil's Political Connection", content: "His works were influenced by and also influenced the Brazilian government and its policies, promoting a sense of national identity through music.", details: ["His music served as a cultural symbol during the era of Getúlio Vargas.", "Villa-Lobos worked as a music educator and created orchestras during the Estado Novo.", "His compositions are seen as expressions of Brazilian nationalism.", "He used his music to foster a sense of Brazilian unity and pride.", "Villa-Lobos's music reflects the political and social ethos of his times."], imageUrl: villalobos1,
+  layout: Math.random() < 0.5 ? 'right' : 'left' },
   { title: "Mid-Section Quiz", type: "quiz", questions: [
     { question: "What is a key characteristic of Villa-Lobos's music?", options: ["Use of Brazilian folk music", "Exclusively classical compositions", "Minimalist style"], answer: "Use of Brazilian folk music" },
     { question: "Which music series by Villa-Lobos is inspired by Bach?", options: ["Symphonies", "Bachianas Brasileiras", "Chôros"], answer: "Bachianas Brasileiras" },
     { question: "What was Villa-Lobos's role in Brazil's Estado Novo?", options: ["Politician", "Music educator", "Ambassador"], answer: "Music educator" }
   ]},
-  { title: "Exploration of Rhythms", content: "Villa-Lobos explored the rhythms of Brazilian music, incorporating these elements into his classical compositions.", details: ["He integrated diverse Brazilian rhythms into his works.", "Rhythmic innovation is a hallmark of his style.", "Explored polyrhythms and syncopation.", "His rhythmic complexity adds a unique texture to his compositions.", "Rhythms often mimic the natural sounds of the Brazilian landscape."] },
-  { title: "Influence on Modern Music", content: "His innovative techniques and styles have left a lasting impact on modern music, influencing many contemporary composers and musicians.", details: ["His compositions influenced 20th-century music globally.", "Villa-Lobos's approach has inspired a range of music genres.", "His works continue to be studied for their innovative use of form and harmony.", "He has influenced composers in both classical and popular music spheres.", "Villa-Lobos's legacy is evident in the continued performance and recording of his works."] },
-  { title: "Legacy and Recognition", content: "Today, Villa-Lobos is celebrated as one of the most important figures in classical music of the 20th century.", details: ["He is recognized globally for his contributions to classical music.", "Villa-Lobos's music is a staple in the repertoires of world-class orchestras.", "Numerous recordings of his works have been made.", "Music festivals dedicated to his music are held regularly.", "He has been the subject of extensive musicological research and publications."] },
+  { title: "Exploration of Rhythms", content: "Villa-Lobos explored the rhythms of Brazilian music, incorporating these elements into his classical compositions.", details: ["He integrated diverse Brazilian rhythms into his works.", "Rhythmic innovation is a hallmark of his style.", "Explored polyrhythms and syncopation.", "His rhythmic complexity adds a unique texture to his compositions.", "Rhythms often mimic the natural sounds of the Brazilian landscape."], imageUrl: villalobos1,
+  layout: Math.random() < 0.5 ? 'right' : 'left' },
+  { title: "Influence on Modern Music", content: "His innovative techniques and styles have left a lasting impact on modern music, influencing many contemporary composers and musicians.", details: ["His compositions influenced 20th-century music globally.", "Villa-Lobos's approach has inspired a range of music genres.", "His works continue to be studied for their innovative use of form and harmony.", "He has influenced composers in both classical and popular music spheres.", "Villa-Lobos's legacy is evident in the continued performance and recording of his works."], imageUrl: villalobos1,
+  layout: Math.random() < 0.5 ? 'right' : 'left' },
+  { title: "Legacy and Recognition", content: "Today, Villa-Lobos is celebrated as one of the most important figures in classical music of the 20th century.", details: ["He is recognized globally for his contributions to classical music.", "Villa-Lobos's music is a staple in the repertoires of world-class orchestras.", "Numerous recordings of his works have been made.", "Music festivals dedicated to his music are held regularly.", "He has been the subject of extensive musicological research and publications."], imageUrl: villalobos1,
+  layout: Math.random() < 0.5 ? 'right' : 'left' },
   { title: "Final Quiz", type: "quiz", questions: [
     { question: "Which element did Villa-Lobos famously incorporate into his classical music compositions?", options: ["Modern pop elements", "Traditional Brazilian instruments", "Electronic music"], answer: "Traditional Brazilian instruments" },
     { question: "How did Villa-Lobos contribute to music education in Brazil?", options: ["Developed a new curriculum", "Ignored it", "Focused only on performance"], answer: "Developed a new curriculum" },
     { question: "Is Villa-Lobos's music considered avant-garde for its time?", options: ["Yes", "No"], answer: "Yes" }
   ]},
-  { title: "More Information", content: "For more details, explore his detailed biography, recordings, and impact on music at major music libraries and websites.", details: ["Villa-Lobos's music is archived in major libraries worldwide.", "Recordings of his works are widely available.", "Biographies of Villa-Lobos can provide deeper insights into his life and works.", "Academic articles and music journals frequently discuss his impact on music.", "Online platforms offer extensive resources for listening to and studying his compositions."] }
+  { title: "References", content: "For more details, explore his detailed biography, recordings, and impact on music at major music libraries and websites.", details: ["Villa-Lobos's music is archived in major libraries worldwide.", "Recordings of his works are widely available.", "Biographies of Villa-Lobos can provide deeper insights into his life and works.", "Academic articles and music journals frequently discuss his impact on music.", "Online platforms offer extensive resources for listening to and studying his compositions."], imageUrl: villalobos1,
+  layout: Math.random() < 0.5 ? 'right' : 'left' }
 ];
 
 const keywords = [
@@ -91,33 +98,36 @@ const VillaLobosPage = () => {
 
   const renderContent = () => {
     const currentSection = sections[currentIndex];
-    const imageComponent = currentSection.imageUrl ? (
-      <img src={currentSection.imageUrl} alt={''} style={{ width: '50%' }} />
-    ) : null;
 
     if (currentSection.type === 'quiz') {
-      return (
-        <div>
-          <p>Please take a short quiz to continue:</p>
-          {renderQuiz(currentSection.questions)}
-          <button className="lobos-submit-button" onClick={checkQuizCompletion}>Submit Answers</button>
-        </div>
-      );
+        return (
+            <div>
+                <h1>{currentSection.title}</h1>
+                <p>Please take a short quiz to continue:</p>
+                {renderQuiz(currentSection.questions)}
+                <button className="lobos-submit-button" onClick={checkQuizCompletion}>Submit Answers</button>
+            </div>
+        );
     } else {
-      return (
-        <div style={{ display: 'flex', flexDirection: currentSection.layout === 'right' ? 'row-reverse' : 'row' }}>
-          {imageComponent}
-          <div>
-            <h1>{currentSection.title}</h1>
-            <p>{currentSection.content}</p>
-            <ul>
-              {currentSection.details.map((detail, index) => <li key={index}>{detail}</li>)}
-            </ul>
-          </div>
-        </div>
-      );
+        return (
+            <div className="lobos-section-container">
+                <div className="lobos-section-content">
+                    <div className="lobos-section-image-container">
+                        <img className="lobos-section-image" src={currentSection.imageUrl} alt={''} />
+                    </div>
+                    <div className="lobos-section-text">
+                        <h1>{currentSection.title}</h1>
+                        <p>{currentSection.content}</p>
+                        <ul>
+                            {currentSection.details.map((detail, index) => <li key={index}>{detail}</li>)}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        );
     }
-  };
+};
+
 
   const renderQuiz = (questions) => (
     <div>
