@@ -16,7 +16,7 @@ import RecordingPage from './pages/RecordingPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/MUS212Final">
       <Navbar />
       <Routes>
         <Route path="/" element={
