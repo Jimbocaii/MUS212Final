@@ -1,72 +1,224 @@
 .cuban-page {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.cuban-section-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.cuban-section-container button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cuban-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuban-image-container img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 1.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 1.5s;
+  transform-style: preserve-3d;
+  perspective: 3000px; /* Increased perspective depth for more pronounced 3D effect */
+}
+
+.cuban-image-container:hover img {
+  animation: bounceAround 2s infinite alternate;
+  box-shadow: 0 0 200px rgba(255, 100, 0, 0.9), 
+              0 0 200px rgba(0, 255, 255, 0.9), 
+              0 0 240px rgba(255, 255, 0, 0.9), 
+              0 0 240px rgba(255, 0, 255, 0.9);
+}
+
+@keyframes bounceAround {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
   }
-  
-  .cuban-section-container, .cuban-keyword-section {
-    margin-top: 3vh;
-    margin-bottom: 20px;
+  25% {
+    transform: translate3d(-20px, -20px, 0);
   }
-  
-  .cuban-navigation button {
-    padding: 10px;
-    margin: 5px;
-    background-color: #4a6977;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+  50% {
+    transform: translate3d(20px, 20px, 0);
   }
-  
-  .cuban-navigation button:hover, .cuban-navigation button:focus {
-    background-color: #36454F;
-    transform: scale(1.05); /* Slightly enlarge button on hover */
+  75% {
+    transform: translate3d(-20px, 20px, 0);
   }
-  
-  .cuban-navigation button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-  
-  .cuban-progress-container {
-    width: 100%;
-    height: 5px;
-    background-color: #ddd;
-    margin: 20px 0;
-    overflow: hidden; /* Needed for the gradient effect */
-  }
-  
-  .cuban-progress-bar {
-    height: 100%;
-    background: linear-gradient(to right, #4a6977, #8093ab); /* Gradient effect */
-    transition: width 0.6s ease;
-  }
-  
-  .cuban-keyword-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
+}
+
+.cuban-text-container {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.cuban-section-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+.cuban-navigation button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #4a6977;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cuban-navigation button:hover, .cuban-navigation button:focus {
+  background-color: #36454F;
+  transform: scale(1.15);
+}
+
+.cuban-navigation button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.cuban-progress-container {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  background-color: #ddd;
+  margin: 20px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cuban-progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, #2b4864, #3f6a8b, #4a829f, #5890b5, #76a7ca);
+  transition: width 0.6s ease;
+  border-radius: 5px;
+}
+
+.cuban-progress-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: white;
+  z-index: 10;
+}
+
+.cuban-section-container .cuban-submit-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #f37928;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cuban-section-container .cuban-submit-button:hover {
+  background-color: #bb3200;
+  transform: scale(1.1);
+}
+
+.cuban-alert-modal {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.cuban-alert-box {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.cuban-alert-box button {
+  padding: 10px 20px;
+  background-color: #4a6977;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cuban-alert-box button:hover {
+  background-color: #36454F;
+  transform: scale(1.05);
+}
+
+.cuban-keyword-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cuban-keyword-box {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuban-keyword-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
   .cuban-keyword-box {
-    width: 200px;
-    padding: 10px;
-    margin: 10px;
-    background: #f8f8f8;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
   }
-  
-  .cuban-keyword-box:hover {
-    transform: translateY(-5px); /* Lift the box slightly on hover */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Enhanced shadow effect for depth */
+  .cuban-section-container img {
+    width: 100%;
+    height: auto;
   }
-  
-  @media (max-width: 768px) {
-    .cuban-keyword-box {
-      width: 100%;
-    }
+  .cuban-section-container {
+    flex-direction: column;
   }
-  
+
+  .cuban-section-container div {
+    flex-basis: 100%;
+    width: 100%;
+  }
+}

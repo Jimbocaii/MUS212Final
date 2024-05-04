@@ -131,6 +131,7 @@ const VillaLobosPage = () => {
       return (
         <div className="lobos-section-container">
           <div className="lobos-text-container">
+            <h1>{currentSection.title}</h1>
             <p>Please take a short quiz to continue:</p>
             {renderQuiz(currentSection.questions)}
             <button className="lobos-submit-button" onClick={checkQuizCompletion}>Submit Answers</button>
