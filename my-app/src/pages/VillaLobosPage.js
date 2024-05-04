@@ -122,22 +122,26 @@ const VillaLobosPage = () => {
   const renderContent = () => {
     const currentSection = sections[currentIndex];
     const imageComponent = currentSection.imageUrl ? (
-      <img src={currentSection.imageUrl} alt={''} style={{ width: '50%' }} />
+      <div className="lobos-image-container">
+        <img src={currentSection.imageUrl} alt={''} />
+      </div>
     ) : null;
-
+  
     if (currentSection.type === 'quiz') {
       return (
-        <div>
-          <p>Please take a short quiz to continue:</p>
-          {renderQuiz(currentSection.questions)}
-          <button className="lobos-submit-button" onClick={checkQuizCompletion}>Submit Answers</button>
+        <div className="lobos-section-container">
+          <div className="lobos-text-container">
+            <p>Please take a short quiz to continue:</p>
+            {renderQuiz(currentSection.questions)}
+            <button className="lobos-submit-button" onClick={checkQuizCompletion}>Submit Answers</button>
+          </div>
         </div>
       );
     } else {
       return (
-        <div style={{ display: 'flex', flexDirection: currentSection.layout === 'right' ? 'row-reverse' : 'row' }}>
+        <div className="lobos-section-container">
           {imageComponent}
-          <div>
+          <div className="lobos-text-container">
             <h1>{currentSection.title}</h1>
             <p>{currentSection.content}</p>
             <ul>
@@ -148,7 +152,7 @@ const VillaLobosPage = () => {
       );
     }
   };
-
+  
   const renderQuiz = (questions) => (
     <div>
       {questions.map((q, index) => (
