@@ -1,6 +1,5 @@
-// App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Import HashRouter instead of BrowserRouter
 import './App.css';
 import './bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -16,7 +15,7 @@ import RecordingPage from './pages/RecordingPage';
 
 function App() {
   return (
-    <Router basename="/MUS212Final">
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={
@@ -27,10 +26,10 @@ function App() {
             <Footer />
           </div>
         } exact />
-        <Route  path="/villa-lobos" element={<VillaLobosPage />} />
-        <Route  path="/brazilian-choro" element={<ChorosPage />} />
-        <Route  path="/cuban-american" element={<CubanPage />} />
-        <Route  path="/performances" element={<RecordingPage />} />
+        <Route path="/villa-lobos" element={<VillaLobosPage />} />
+        <Route path="/brazilian-choro" element={<ChorosPage />} />
+        <Route path="/cuban-american" element={<CubanPage />} />
+        <Route path="/performances" element={<RecordingPage />} />
       </Routes>
     </Router>
   );
