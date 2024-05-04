@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MUS212Final/static/css/main.8c2fc415.css",
-    "main.js": "/MUS212Final/static/js/main.b9fdf1b5.js",
+    "main.css": "/MUS212Final/static/css/main.dd4c5227.css",
+    "main.js": "/MUS212Final/static/js/main.329e27ab.js",
     "static/js/453.ed3810f9.chunk.js": "/MUS212Final/static/js/453.ed3810f9.chunk.js",
     "static/media/me.JPEG": "/MUS212Final/static/media/me.225513b3bc3a03c2b9ca.JPEG",
     "static/media/cuban1.jpg": "/MUS212Final/static/media/cuban1.28d90323d9fdaad71fa7.jpg",
@@ -9,12 +9,12 @@
     "static/media/villalobos1.jpg": "/MUS212Final/static/media/villalobos1.241ba4a019760aeb9875.jpg",
     "static/media/villalobos2.jpg": "/MUS212Final/static/media/villalobos2.59fa9c2fe0a675cc8ac2.jpg",
     "index.html": "/MUS212Final/index.html",
-    "main.8c2fc415.css.map": "/MUS212Final/static/css/main.8c2fc415.css.map",
-    "main.b9fdf1b5.js.map": "/MUS212Final/static/js/main.b9fdf1b5.js.map",
+    "main.dd4c5227.css.map": "/MUS212Final/static/css/main.dd4c5227.css.map",
+    "main.329e27ab.js.map": "/MUS212Final/static/js/main.329e27ab.js.map",
     "453.ed3810f9.chunk.js.map": "/MUS212Final/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c2fc415.css",
-    "static/js/main.b9fdf1b5.js"
+    "static/css/main.dd4c5227.css",
+    "static/js/main.329e27ab.js"
   ]
 }
