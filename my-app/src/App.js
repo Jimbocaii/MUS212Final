@@ -27,10 +27,10 @@ function App() {
             <Footer />
           </div>
         } exact />
-        <Route basename="/villa-lobos" path="/villa-lobos" element={<VillaLobosPage />} />
-        <Route basename="/brazilian-choro" path="/brazilian-choro" element={<ChorosPage />} />
-        <Route basename="/cuban-american" path="/cuban-american" element={<CubanPage />} />
-        <Route basename="/performances" path="/performances" element={<RecordingPage />} />
+        <Route  path="/villa-lobos" element={<VillaLobosPage />} />
+        <Route  path="/brazilian-choro" element={<ChorosPage />} />
+        <Route  path="/cuban-american" element={<CubanPage />} />
+        <Route  path="/performances" element={<RecordingPage />} />
       </Routes>
     </Router>
   );
