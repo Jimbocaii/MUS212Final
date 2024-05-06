@@ -1,21 +1,32 @@
 {
   "files": {
     "main.css": "/MUS212Final/static/css/main.52549f33.css",
-    "main.js": "/MUS212Final/static/js/main.3aff4daf.js",
+    "main.js": "/MUS212Final/static/js/main.77cdc80b.js",
     "static/js/453.ed3810f9.chunk.js": "/MUS212Final/static/js/453.ed3810f9.chunk.js",
     "static/media/me.JPEG": "/MUS212Final/static/media/me.225513b3bc3a03c2b9ca.JPEG",
     "static/media/cuban1.jpg": "/MUS212Final/static/media/cuban1.28d90323d9fdaad71fa7.jpg",
     "static/media/cuban2.jpg": "/MUS212Final/static/media/cuban2.09bdf5f3ca513a12b797.jpg",
+    "static/media/cuban3.jpg": "/MUS212Final/static/media/cuban3.7e4c2ab789e22b6401d4.jpg",
+    "static/media/choro4.jpg": "/MUS212Final/static/media/choro4.c741d243d75f944c6419.jpg",
+    "static/media/cuban5.jpg": "/MUS212Final/static/media/cuban5.ea5fa6a71c4e86abb8e8.jpg",
+    "static/media/villalobosSOLO.jpg": "/MUS212Final/static/media/villalobosSOLO.d7fc902fa537ce35e251.jpg",
+    "static/media/cuban4.jpg": "/MUS212Final/static/media/cuban4.17d35599cfbb94511ba9.jpg",
+    "static/media/villalobos3.jpg": "/MUS212Final/static/media/villalobos3.1001559fa4e3283d57e5.jpg",
+    "static/media/choro3.jpg": "/MUS212Final/static/media/choro3.04375a4626ecae3f3701.jpg",
     "static/media/choro1.jpg": "/MUS212Final/static/media/choro1.fcf0fa060c0787c2b23e.jpg",
     "static/media/villalobos1.jpg": "/MUS212Final/static/media/villalobos1.241ba4a019760aeb9875.jpg",
+    "static/media/reference1.jpg": "/MUS212Final/static/media/reference1.0769cc5b11c6bbd7aafd.jpg",
+    "static/media/villalobos5.jpg": "/MUS212Final/static/media/villalobos5.afa2f8d340b747241d25.jpg",
+    "static/media/villalobos4.jpg": "/MUS212Final/static/media/villalobos4.067d07425ca344464b48.jpg",
     "static/media/villalobos2.jpg": "/MUS212Final/static/media/villalobos2.59fa9c2fe0a675cc8ac2.jpg",
+    "static/media/choro6.jpg": "/MUS212Final/static/media/choro6.e6439ca4607b279216ef.jpg",
     "index.html": "/MUS212Final/index.html",
     "main.52549f33.css.map": "/MUS212Final/static/css/main.52549f33.css.map",
-    "main.3aff4daf.js.map": "/MUS212Final/static/js/main.3aff4daf.js.map",
+    "main.77cdc80b.js.map": "/MUS212Final/static/js/main.77cdc80b.js.map",
     "453.ed3810f9.chunk.js.map": "/MUS212Final/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.52549f33.css",
-    "static/js/main.3aff4daf.js"
+    "static/js/main.77cdc80b.js"
   ]
 }
