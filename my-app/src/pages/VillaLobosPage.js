@@ -2,63 +2,151 @@ import React, { useState } from 'react';
 import './VillaLobosPage.css';
 import villalobos1 from '../assets/images/villalobos1.jpg';
 import villalobos2 from '../assets/images/villalobos2.jpg';
+import villalobos3 from '../assets/images/villalobos3.jpg';
+import villalobos4 from '../assets/images/villalobos4.jpg';
+import villalobos5 from '../assets/images/villalobos5.jpg';
+import villalobosSOLO from '../assets/images/villalobosSOLO.jpg';
+import reference from '../assets/images/reference1.jpg';
 
 
 const sections = [
-  { title: "Who is Villa-Lobos?", 
-    content: "Heitor Villa-Lobos was a Brazilian composer, conductor, cellist, and guitarist known for his creative compositions that blend Western classical music with Brazilian folk music.", 
-    details: ["Influential in the development of Brazilian art music.", "Used elements from both Brazilian folk music and European classical music.", "His compositions include symphonies, operas, and chamber music.", "Promoted Brazilian music globally.", "His style is characterized by originality and innovation."], 
+  {
+    title: "The Maestro of Blended Traditions",
+    content: "Explore Villa-Lobos' innovative fusion of Brazilian folk and European classical music.",
+    details: [
+      "Villa-Lobos merged samba and choro with classical forms, crafting a modern Brazilian musical identity.",
+      "He integrated indigenous and Afro-Brazilian sounds, showcasing Brazil’s diverse cultural tapestry.",
+      "This unique blend elevated Brazilian music on the global stage, influencing both folk and classical genres worldwide."
+    ],
     imageUrl: villalobos1
   },
-  { title: "His Famous Works", 
-    content: "Villa-Lobos is best known for his Bachianas Brasileiras series, Chôros, and his operas which incorporate a variety of Brazilian music styles and instruments.", 
-    details: ["Bachianas Brasileiras are a fusion of Brazilian folk music and the style of Johann Sebastian Bach.", "Chôros introduces a new style inspired by street music of Rio de Janeiro.", "His operas often feature themes of Brazilian nationalism and folklore.", "His works have been performed internationally.", "Villa-Lobos was a pioneer in using Brazilian indigenous music and rhythms in orchestral compositions."], 
-    imageUrl: villalobos1 
+  {
+    title: "Guitar Virtuoso: Villa-Lobos's Signature Works",
+    content: "Discover the depth of Villa-Lobos' guitar compositions.",
+    details: [
+      "His 'Chôros' series introduced novel rhythmic structures, blending them with traditional melodies.",
+      "The 'Preludes' showcase innovative guitar techniques, highlighting the instrument's expressive potential. Each of the Preludes have a meaning of why he wrote them and varies in styles dramatically",
+      "He wrote 5 Preludes for Solo guitar",
+      "These works are essential in classical guitar curricula globally, celebrated for their technical and cultural depth."
+    ],
+    imageUrl: villalobosSOLO
   },
-  { title: "Music and Brazil's Political Connection", 
-    content: "His works were influenced by and also influenced the Brazilian government and its policies, promoting a sense of national identity through music.", 
-    details: ["His music served as a cultural symbol during the era of Getúlio Vargas.", "Villa-Lobos worked as a music educator and created orchestras during the Estado Novo.", "His compositions are seen as expressions of Brazilian nationalism.", "He used his music to foster a sense of Brazilian unity and pride.", "Villa-Lobos's music reflects the political and social ethos of his times."], 
-    imageUrl: villalobos1 
+  {
+    title: "The Cultural Ambassador: Music Meets Politics",
+    content: "How Villa-Lobos used music as a tool for political and cultural expression.",
+    details: [
+      "During the Estado Novo regime, Villa-Lobos directed national music educationas a director, promoting Brazilian unity.",
+      "His international tours acted as cultural diplomacy, promiting and representing Brazil's cultural prestige amid political shifts.",
+      "His compositions subtly carries messages of Brazilian nationalism, reflecting and shaping Brazil’s national identity."
+    ],
+    imageUrl: villalobos3
   },
-  { title: "Mid-Section Quiz", type: "quiz", questions: [
-    { question: "What is a key characteristic of Villa-Lobos's music?", options: ["Use of Brazilian folk music", "Exclusively classical compositions", "Minimalist style"], answer: "Use of Brazilian folk music" },
-    { question: "Which music series by Villa-Lobos is inspired by Bach?", options: ["Symphonies", "Bachianas Brasileiras", "Chôros"], answer: "Bachianas Brasileiras" },
-    { question: "What was Villa-Lobos's role in Brazil's Estado Novo?", options: ["Politician", "Music educator", "Ambassador"], answer: "Music educator" }
-  ]},
-  { title: "Exploration of Rhythms", 
-    content: "Villa-Lobos explored the rhythms of Brazilian music, incorporating these elements into his classical compositions.", 
-    details: ["He integrated diverse Brazilian rhythms into his works.", "Rhythmic innovation is a hallmark of his style.", "Explored polyrhythms and syncopation.", "His rhythmic complexity adds a unique texture to his compositions.", "Rhythms often mimic the natural sounds of the Brazilian landscape."], 
+  {
+    title: "Mid-Section Quiz",
+    type: "quiz",
+    questions: [
+      {
+        question: "Which of Villa-Lobos's series blends elements of Brazilian folk with classical guitar technique?",
+        options: ["Chôros", "Bachianas Brasileiras", "Preludes"],
+        answer: "Chôros"
+      },
+      {
+        question: "How did Villa-Lobos use his international tours to benefit Brazilian culture?",
+        options: ["By promoting Brazilian dance", "By conducting cultural diplomacy", "By organizing music festivals"],
+        answer: "By conducting cultural diplomacy"
+      }
+    ]
+  },
+  {
+    title: "Rhythmic Innovations: Breaking Boundaries",
+    content: "Villa-Lobos's compositions reflect his mastery of rhythm, inspired by Brazil’s natural sounds.",
+    details: [
+      "He used polyrhythms and syncopation to represent the sounds of the Brazilian rainforest.",
+      "His innovative use of rhythm brought new life to classical music, incorporating elements of Brazilian dances and festivals.",
+      "These rhythmic innovations made his works stand out, adding a lively, dynamic quality to classical performances.",
+      "Elements from Operas, Bach and Vocals can often be heard in most of his compositions"
+    ],
+    imageUrl: villalobos4
+  },
+  {
+    title: "Echoes of Modernity: Villa-Lobos’s Lasting Influence",
+    content: "Villa-Lobos's profound impact on modern music.",
+    details: [
+      "He pioneered blending different techniques from different cultures and composers. WHich has influenced a broad spectrum of music genres and composers globally.",
+      "His approach to composition and adaptation has established him as a foundational figure in 20th-century classical and Brazillian music.",
+      "Composers and musicians worldwide continue to draw inspiration from his innovative use of form and harmony."
+    ],
+    imageUrl: villalobos5
+  },
+  {
+    title: "Innovations in Chamber Music",
+    content: "Explore Villa-Lobos's contributions to chamber music.",
+    details: [
+      "His 17 string quartets showcase a fusion of Brazilian folk elements with classical chamber music structures.",
+      "His chamber music features innovative instrumentation, often including non-traditional combinations that challenge conventional forms.",
+      "These compositions are renowned for their complexity, modernism and have influenced different chamber music repertoire and composition internationally."
+    ],
     imageUrl: villalobos2
   },
-  { title: "Influence on Modern Music", 
-    content: "His innovative techniques and styles have left a lasting impact on modern music, influencing many contemporary composers and musicians.",  
-    details: ["His compositions influenced 20th-century music globally.", "Villa-Lobos's approach has inspired a range of music genres.", "His works continue to be studied for their innovative use of form and harmony.", "He has influenced composers in both classical and popular music spheres.", "Villa-Lobos's legacy is evident in the continued performance and recording of his works."], 
+  {
+    title: "Villa-Lobos's Global Impact",
+    content: "Explore the international influence of Villa-Lobos's music.",
+    details: [
+      "His pedagogical and compositional methods are integral to music education curricula worldwide, inspiring new generations.",
+      "Performed internationally, his works underscore the adaptability and appeal of his musical innovations.",
+      "His efforts paved the way for future cross-cultural collaborations, building a lasting global legacy."
+    ],
     imageUrl: villalobos1
   },
-  { title: "Legacy and Recognition", 
-    content: "Today, Villa-Lobos is celebrated as one of the most important figures in classical music of the 20th century.", 
-    details: ["He is recognized globally for his contributions to classical music.", "Villa-Lobos's music is a staple in the repertoires of world-class orchestras.", "Numerous recordings of his works have been made.", "Music festivals dedicated to his music are held regularly.", "He has been the subject of extensive musicological research and publications."],
-    imageUrl: villalobos1
+  {
+    title: "Final Quiz",
+    type: "quiz",
+    questions: [
+      {
+        question: "What rhythmic element did Villa-Lobos employ to mimic the natural sounds of the Brazilian environment?",
+        options: ["Polysynthetics", "Polyrhythms", "Homorhythms"],
+        answer: "Polyrhythms"
+      },
+      {
+        question: "Which of Villa-Lobos's works is known for integrating a variety of instrumental combinations and challenging conventional norms in chamber music?",
+        options: ["Bachianas Brasileiras", "Chôros", "His string quartets"],
+        answer: "His string quartets"
+      },
+      {
+        question: "How did Villa-Lobos's music contribute to global cultural collaborations?",
+        options: ["By using universally understood musical structures", "By influencing music education curricula worldwide", "By incorporating modern electronic music elements"],
+        answer: "By influencing music education curricula worldwide"
+      }
+    ]
   },
-  { title: "Final Quiz", type: "quiz", questions: [
-    { question: "Which element did Villa-Lobos famously incorporate into his classical music compositions?", options: ["Modern pop elements", "Traditional Brazilian instruments", "Electronic music"], answer: "Traditional Brazilian instruments" },
-    { question: "How did Villa-Lobos contribute to music education in Brazil?", options: ["Developed a new curriculum", "Ignored it", "Focused only on performance"], answer: "Developed a new curriculum" },
-    { question: "Is Villa-Lobos's music considered avant-garde for its time?", options: ["Yes", "No"], answer: "Yes" }
-  ]},
-  { title: "References", 
-    content: "For more details, explore his detailed biography, recordings, and impact on music at major music libraries and websites.", 
-    details: ["Villa-Lobos's music is archived in major libraries worldwide.", "Recordings of his works are widely available.", "Biographies of Villa-Lobos can provide deeper insights into his life and works.", "Academic articles and music journals frequently discuss his impact on music.", "Online platforms offer extensive resources for listening to and studying his compositions."], 
-    imageUrl: villalobos2 
+  {
+    title: "References",
+    details: [
+      "Garcia, Thomas G. “The ‘Choro’, the Guitar and Villa-Lobos.” Luso-Brazilian Review, vol. 34, no. 1, 1997, pp. 57–66. JSTOR, http://www.jstor.org/stable/3513804. Accessed 4 April 2024.",
+      "Simon Wright. “Villa-Lobos: Modernism in the Tropics.” The Musical Times, vol. 128, no. 1729, 1987, pp. 132–35. JSTOR, https://doi.org/10.2307/964493. Accessed 5 April 2024.",
+      "Vassberg, David E. “Villa-Lobos: Music as a Tool of Nationalism.” Luso-Brazilian Review, vol. 6, no. 2, 1969, pp. 55–65. JSTOR, http://www.jstor.org/stable/3512733. Accessed 4 April 2024.",
+      "de Oliveira Pinto, Tiago. “‘Art Is Universal’ - On Nationalism and Universality in the Music of Heitor Villa-Lobos.” The World of Music, vol. 29, no. 2, 1987, pp. 104–16. JSTOR, http://www.jstor.org/stable/43562744. Accessed 4 April 2024."
+    ],
+    imageUrl: reference 
   }
 ];
 
+
+
+
+
 const keywords = [
-  { term: "Cannibalism", definition: "In cultural studies, refers to the absorption and adaptation of cultural elements from colonizers by colonized societies, as seen in Villa-Lobos's music." },
-  { term: "Modernism", definition: "Musical modernism in Brazil was heavily influenced by Villa-Lobos who combined traditional Brazilian music with contemporary classical techniques." },
-  { term: "Nationalism", definition: "Villa-Lobos used music as a form of national expression, promoting Brazilian identity through his compositions." },
-  { term: "Folklore", definition: "He often incorporated Brazilian folklore into his music, bringing native themes and stories to a global audience." },
-  { term: "Avant-Garde", definition: "Villa-Lobos was considered avant-garde for his time, pushing the boundaries of music with innovative structures and harmonies." }
+  { term: "Chôro", definition: "A Brazilian music style that combines elements of European march and African rhythms, significantly shaped by Villa-Lobos." },
+  { term: "Nationalism", definition: "Villa-Lobos used his compositions to express and foster a sense of Brazilian national identity, often aligning with governmental cultural policies." },
+  { term: "Orchestration", definition: "He was known for his ability to orchestrate music thatfully leveraged the diverse sounds and textures of orchestral instruments to depict Brazilian musical themes." },
+  { term: "Modernity", definition: "Villa-Lobos's work embodies the spirit of modernity, merging traditional forms with avant-garde techniques to create new musical expressions." },
+  { term: "Polyrhythms", definition: "Refers to the simultaneous use of two or more conflicting rhythms, a technique often used by Villa-Lobos to enrich the textural complexity of his compositions." },
+  { term: "Cultural Diplomacy", definition: "He utilized his music as a form of cultural diplomacy, enhancing Brazil's cultural prestige internationally through his compositions and international tours." },
+  { term: "Music Education", definition: "Villa-Lobos significantly contributed to music education in Brazil, developing curricula and organizing large-scale orchestra and choir performances to promote music learning." },
+  { term: "Avant-Garde", definition: "His approach was considered avant-garde for his time, pushing the boundaries of music with innovative structures and harmonies." },
+  { term: "Syncretism", definition: "The blending of different religious, cultural, or musical practices, as seen in Villa-Lobos's fusion of Brazilian folk and European classical music traditions." }
 ];
+
 
 const VillaLobosPage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -26,7 +26,18 @@ const RecordingPage = () => {
             allowFullScreen
             title="Video 2"
           ></iframe>
-          <p className="video-description">Title: <strong>Choro No. 2</strong><br/>Composer: <strong>Heitor Villa-Lobos</strong><br/>Performer: <strong>Yo-Yo Ma</strong></p>
+          <p className="video-description">Title: <strong>Tico-Tico no Fubá</strong><br/>Composer: <strong>Zequinha de Abreu</strong><br/>Performer: <strong>Jim Cai</strong></p>
+        </div>
+        <div className="video-block">
+          <iframe
+            className="youtube-video"
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID2"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Video 2"
+          ></iframe>
+          <p className="video-description">Title: <strong>Danza Brasilera</strong><br/>Composer: <strong>Jorge Morel</strong><br/>Performer: <strong>Jim Cai</strong></p>
         </div>
       </div>
     </div>

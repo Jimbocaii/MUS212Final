@@ -1,20 +1,57 @@
 import React, { useState } from 'react';
 import './ChorosPage.css';
 import chorosImage1 from '../assets/images/choro1.jpg';
+import chorosImage2 from '../assets/images/choro2.jpg';
+import chorosImage3 from '../assets/images/choro3.jpg';
+import chorosImage4 from '../assets/images/choro4.jpg';
+import chorosImage5 from '../assets/images/choro5.jpg';
+import chorosImage6 from '../assets/images/choro6.jpg';
+import reference from '../assets/images/reference2.jpg';
+
 
 
 const sections = [
   {
     title: "Introduction to Choros",
-    content: "Discover the world of Choros, a Brazilian music genre known for its fast and happy rhythm.",
+    content: "A Brazilian music genre known for its fast and happy rhythm.",
+    details: [
+      "Choros originated in 19th century Rio de Janeiro as a blend of European polka and African rhythms.",
+      "Typically in a fast and happy/exciting rhythm",
+      "Traditionally, it involves complex melodies and counterpoints that challenge even skilled musicians.",
+      "It's celebrated for its improvisational nature, allowing musicians to express creativity within structured compositions."
+    ],
     imageUrl: chorosImage1
   },
   {
     title: "Famous Choros Musicians",
-    content: "Learn about iconic musicians like Pixinguinha, who have shaped the Choros scene in Brazil.",
-    imageUrl: chorosImage1
+    content: "Iconic musicians who have shaped the Choros scene in Brazil.",
+    details: [
+      "Pixinguinha is credited with transforming Choros into a respected music genre through his sophisticated arrangements and compositions.",
+      "Other key figures include Jacob do Bandolim and Waldir Azevedo, both revered for their contributions to modern Choros.",
+      "These musicians are noted for their technical mastery and emotional depth, which have left a lasting impact on Brazilian music."
+    ],
+    imageUrl: chorosImage5
   },
-  // Adding a quiz section
+  {
+    title: "Choros Instruments",
+    content: "Explore the diverse range of instruments used in Choros music.",
+    details: [
+      "The bandolim is a staple instrument in Choros ensembles, known for its bright tone and virtuosic playing style.",
+      "Other common instruments include the cavaquinho, a small guitar-like instrument, and the pandeiro, a Brazilian tambourine.",
+      "Choros groups often feature a variety of wind instruments such as the flute, clarinet, and saxophone, adding richness to the ensemble sound."
+    ],
+    imageUrl: chorosImage2
+  },
+  {
+    title: "Choros Dance and Culture",
+    content: "Cultural aspects and dance traditions associated with Choros.",
+    details: [
+      "Choros music is often accompanied by lively dance styles such as the maxixe and the samba, reflecting Brazil's vibrant cultural heritage.",
+      "The music's infectious rhythms and joyful melodies encourage spontaneous dancing and celebration.",
+      "Choros culture celebrates community and inclusivity, with gatherings ranging from informal jam sessions to elaborate street festivals."
+    ],
+    imageUrl: chorosImage6
+  },
   {
     title: "Mid-Section Quiz",
     type: "quiz",
@@ -25,41 +62,52 @@ const sections = [
   },
   {
     title: "Evolution of Choros",
-    content: "Explore how Choros has evolved over the years, integrating modern musical elements.",
-    imageUrl: chorosImage1
+    content: "Integrating modern musical elements.",
+    details: [
+      "In the 20th century, Choros absorbed influences from jazz and samba, enriching its harmonic complexity.",
+      "Contemporary musicians continue to experiment with Choros, blending it with genres like funk and hip-hop.",
+      "This evolution has helped Choros remain relevant in Brazil's vibrant music scene, continually attracting new audiences."
+    ],
+    imageUrl: chorosImage3
   },
   {
     title: "Choros Today",
-    content: "Understand the current state of Choros music and its influence on contemporary Brazilian culture.",
-    imageUrl: chorosImage1
+    content: "Current state of Choros music and its influence on contemporary Brazilian culture.",
+    details: [
+      "Choros remains a popular genre in urban centers, with lively performances in clubs and at street festivals.",
+      "It's recognized as a symbol of Brazilian cultural identity and resilience, celebrated in both formal and informal settings.",
+      "Musicians and composers innovate within the genre by introducing global music influences while preserving traditional Choros forms."
+    ],
+    imageUrl: chorosImage4
   },
   {
     title: "Final Quiz",
     type: "quiz",
     questions: [
-      { question: "What is a hallmark of Choros music?", options: ["Complex harmonies", "Simple rhythms", "Electronic enhancements"], answer: "Complex harmonies" },
-      { question: "Which instrument is a mainstay in Choros ensembles?", options: ["Bandolim", "Drum kit", "Electric guitar"], answer: "Bandolim" },
-      { question: "How is improvisation used in Choros music?", options: ["Rarely used", "Central to performance", "Only in rehearsals"], answer: "Central to performance" }
+      { question: "How has Choros music evolved in the 20th century?", options: ["By incorporating elements from rock music", "By integrating jazz and samba influences", "By returning to its classical roots"], answer: "By integrating jazz and samba influences" },
+      { question: "What does the role of improvisation play in Choros music?", options: ["It is discouraged", "It is central to performance", "It is reserved for rehearsals"], answer: "It is central to performance" },
+      { question: "Which setting is NOT commonly associated with live Choros performances?", options: ["Large concert halls", "Street festivals", "Music clubs"], answer: "Large concert halls" }
     ]
   },
   {
     title: "References",
-    content: "Delve deeper into the world of Choros music with these resources.",
+    content: "",
     details: [
-      "Explore extensive recordings and biographies of notable Choros musicians.",
-      "Choros music is discussed in numerous academic papers and music conferences.",
-      "Online platforms offer a wide array of Choros performances and tutorials."
+      "Miller, Richard. “African Rhythms in Brazilian Popular Music: Tango Brasileiro, Maxixe and Choro.” Luso-Brazilian Review, vol. 48, no. 1, 2011, pp. 6–35. JSTOR, http://www.jstor.org/stable/41342566.",
+      "Reily, Suzel Ana. “Introduction: Brazilian Musics, Brazilian Identities.” British Journal of Ethnomusicology, vol. 9, no. 1, 2000, pp. 1–10. JSTOR, http://www.jstor.org/stable/3060787. "
     ],
-    imageUrl: chorosImage1 // Ensure you have a relevant image or use a placeholder
+    imageUrl: reference
   }
 ];
 
 const keywords = [
   { term: "Pixinguinha", definition: "One of the most important figures in the history of Choros, known for his compositions and skill as a flautist." },
-  { term: "Bandolim", definition: "A stringed musical instrument similar to a mandolin, commonly used in Choros music." },
-  { term: "Choro Club", definition: "Informal gatherings where musicians play Choros music and improvise together, which are essential for the tradition's continuity." }
+  { term: "Jacob do Bandolim", definition: "Renowned Choros musician and composer, recognized for his virtuosic bandolim playing and innovative compositions." },
+  { term: "Waldir Azevedo", definition: "Influential Choros musician known for popularizing the choro genre with his compositions and performances on the cavaquinho." },
+  { term: "Cavaquinho", definition: "A small, four-stringed guitar-like instrument commonly used in Choros music, known for its bright and lively sound." },
+  { term: "Pandeiro", definition: "A Brazilian tambourine often used in Choros ensembles to provide rhythmic accompaniment and percussive flair." },
+  { term: "Maxixe", definition: "A lively Brazilian dance style closely associated with Choros music, characterized by quick footwork and playful movements." }
 ];
-
 const ChorosPage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [quizAnswers, setQuizAnswers] = useState({});
@@ -157,6 +205,11 @@ const ChorosPage = () => {
           <div className="choros-text-container">
             <h1>{currentSection.title}</h1>
             <p>{currentSection.content}</p>
+            <ul>
+              {currentSection.details.map((detail, index) => (
+                <li key={index}>{detail}</li>
+              ))}
+            </ul>
           </div>
         </div>
       );
