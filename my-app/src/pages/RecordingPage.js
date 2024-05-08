@@ -20,18 +20,18 @@ const RecordingPage = () => {
         <div className="video-block">
           <iframe
             className="youtube-video"
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID2"
+            src="https://www.youtube.com/embed/wNOOT4k7818?si=oJajWwAiEQZHeFJ1"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="Video 2"
           ></iframe>
-          <p className="video-description">Title: <strong>Tico-Tico no Fubá</strong><br/>Composer: <strong>Zequinha de Abreu</strong><br/>Performer: <strong>Jim Cai</strong></p>
+          <p className="video-description">Title: <strong>Juliana</strong><br/>Composer: <strong>Jorge Garcell</strong><br/>Performer: <strong>Jim Cai</strong></p>
         </div>
         <div className="video-block">
           <iframe
             className="youtube-video"
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID2"
+            src="https://www.youtube.com/embed/58fnK0Mh1zc?si=xPgNicfpT-ZhovlD"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
